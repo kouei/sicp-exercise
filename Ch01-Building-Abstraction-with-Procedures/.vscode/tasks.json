@@ -6,7 +6,7 @@
         {
             "label": "build task",
             "type": "shell",
-            "command": "scheme exercise1.1.ss -q",
+            "command": "scheme exercise1.8.ss -q",
             "group": {
                 "kind": "build",
                 "isDefault": true
