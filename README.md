@@ -4,8 +4,8 @@ There is also a course at MIT [Structure and Interpretation of Computer Programs
 
 ## Usage
 The Scheme Environment used in this project is [Chez Scheme](https://cisco.github.io/ChezScheme/).  
-For example, If you want to run the file `exercise1.1.ss` you can enter the following command:
+For example, if you want to run the file `exercise1.1.ss` you can enter the following command:
 
-`scheme exercise1.1.ss -q`
+`$ scheme exercise1.1.ss -q`
 
 The `-q` parameter will suppress the greeting information printed by the scheme interpreter.
