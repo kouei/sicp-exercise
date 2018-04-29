@@ -11,6 +11,8 @@
 
 (newline) (newline)
 
-(display "(pascal-triangle-elem 4 2)") (display " -> ") (display (pascal-triangle-elem 4 2)) (newline) (newline)
-
+(display "(pascal-triangle-elem 2 2)") (display " -> ") (display (pascal-triangle-elem 2 2)) (newline) (newline)
+(display "(pascal-triangle-elem 3 2)") (display " -> ") (display (pascal-triangle-elem 3 2)) (newline) (newline)
+(display "(pascal-triangle-elem 4 3)") (display " -> ") (display (pascal-triangle-elem 4 3)) (newline) (newline)
+(display "(pascal-triangle-elem 5 4)") (display " -> ") (display (pascal-triangle-elem 5 4)) (newline) (newline)
 (exit)
