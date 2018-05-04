@@ -14,10 +14,16 @@
         (cbrt-iter (improve guess x) guess x)))
 
 (define (cbrt x)
-        (cbrt-iter (improve 1.0 x)
-                   1.0
-                   x))
+        (cond ((= x 0) 0)
+              ((> x 0) (cbrt-iter (improve 1.0 x) 1.0 x))
+              (else (- (cbrt (- x))))))
 
-(display (cbrt 3)) (newline) (newline)
-(display (cube (cbrt 3)))
+(display (cbrt 0)) (newline)
+(display (cube (cbrt 0))) (newline) (newline)
+
+(display (cbrt 3)) (newline)
+(display (cube (cbrt 3))) (newline) (newline)
+
+(display (cbrt (- 3))) (newline)
+(display (cube (cbrt (- 3)))) (newline) (newline)
 (exit)

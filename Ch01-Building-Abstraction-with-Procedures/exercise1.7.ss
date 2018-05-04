@@ -14,6 +14,7 @@
 (define (my-sqrt x)
         (sqrt-iter 1.0 x))
 
+(display (my-sqrt 0)) (newline)
 (display (my-sqrt 0.0001)) (newline) (newline)
 
 
@@ -27,8 +28,11 @@
         (better-sqrt-iter (improve guess x) guess x)))
 
 (define (better-my-sqrt x)
-        (better-sqrt-iter (improve 1.0 x) 1.0 x))
+        (if (= x 0) 
+                x
+        (better-sqrt-iter (improve 1.0 x) 1.0 x)))
 
-(display (better-my-sqrt 0.0001))
+(display (better-my-sqrt 0)) (newline)
+(display (better-my-sqrt 0.0001)) (newline) (newline)
 
 (exit)

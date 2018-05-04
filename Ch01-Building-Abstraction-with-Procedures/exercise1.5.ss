@@ -1,3 +1,6 @@
+; for applicative-order evaluation this is an infinite loop
+; for normal-order evaluation this evaluates to 0
+
 (define (p) (p))
 (define (test x y)
     (if (= x 0)
