@@ -1,0 +1,1 @@
+; Omitted. Please refer to http://community.schemewiki.org/?sicp-ex-2.14-2.15-2.16
