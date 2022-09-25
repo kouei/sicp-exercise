@@ -11,4 +11,8 @@
 (define two
     (lambda (f) (lambda (x) (f (f x)))))
 
+; You can verify the following add procedure by showing that (add one two) equals three
+(define add (a b)
+    (lambda (f) (lambda (x) (a f) ((b f) x))))
+
 (exit)
